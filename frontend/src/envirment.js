@@ -1,4 +1,4 @@
-let IS_PROD = false;
+let IS_PROD = true;
 
 const server = {
   dev: "http://localhost:5000",

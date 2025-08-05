@@ -7,7 +7,7 @@ import {
 } from './noticeSlice';
 
 // Agar aap centralized environment file se import kar rahe ho to wo bhi kar sakte hain:
-import BASE_URL from '../../../envirment';
+import BASE_URL from '../../envirment';
 
 export const getAllNotices = (id, address) => async (dispatch) => {
     dispatch(getRequest());

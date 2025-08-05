@@ -13,7 +13,7 @@ import {
 } from './sclassSlice';
 
 // import BASE_URL from centralized environment file
-import BASE_URL from '../../../envirment.js'; // path apne project structure ke hisab se adjust karo
+import BASE_URL from '../../envirment.js'; // path apne project structure ke hisab se adjust karo
 
 const handleError = (dispatch, error) => {
     const message =

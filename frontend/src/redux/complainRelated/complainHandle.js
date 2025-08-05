@@ -6,7 +6,7 @@ import {
     getError
 } from './complainSlice';
 
-import BASE_URL from '../../../envirment';  // extension optional
+import BASE_URL from '../../envirment';  // extension optional
 
 export const getAllComplains = (id, address) => async (dispatch) => {
     dispatch(getRequest());

@@ -8,7 +8,7 @@ import {
     doneSuccess
 } from './teacherSlice';
 
-import BASE_URL from '../../../envirment';  // apne file path ke hisaab se correct karo
+import BASE_URL from '../../envirment';  // apne file path ke hisaab se correct karo
 
 const handleError = (dispatch, error) => {
     const message =

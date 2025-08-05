@@ -8,7 +8,7 @@ import {
 } from './studentSlice';
 
 // centralized base url import karo yaha se
-import BASE_URL from '../../../envirment'; // apne path ke hisaab se adjust karo
+import BASE_URL from '../../envirment'; // apne path ke hisaab se adjust karo
 
 const handleError = (dispatch, error) => {
     const message =

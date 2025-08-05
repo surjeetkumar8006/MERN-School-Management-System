@@ -13,7 +13,7 @@ import {
     getError,
 } from './userSlice';
 
-import BASE_URL from '../../../envirment'; // ✅ Correct path adjust karo
+import BASE_URL from '../../envirment'; // ✅ Correct path adjust karo
 
 const handleError = (dispatch, error, failAction = getError) => {
     const message =
