@@ -7,7 +7,8 @@ import {
     stuffDone
 } from './studentSlice';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+// centralized base url import karo yaha se
+import BASE_URL from '../../../envirment'; // apne path ke hisaab se adjust karo
 
 const handleError = (dispatch, error) => {
     const message =

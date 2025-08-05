@@ -13,7 +13,7 @@ import {
     getError,
 } from './userSlice';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+import BASE_URL from '../../../envirment'; // ✅ Correct path adjust karo
 
 const handleError = (dispatch, error, failAction = getError) => {
     const message =

@@ -8,7 +8,7 @@ import {
     doneSuccess
 } from './teacherSlice';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+import BASE_URL from '../../../envirment';  // apne file path ke hisaab se correct karo
 
 const handleError = (dispatch, error) => {
     const message =

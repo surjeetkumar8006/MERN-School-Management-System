@@ -6,7 +6,8 @@ import {
     getError
 } from './noticeSlice';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+// Agar aap centralized environment file se import kar rahe ho to wo bhi kar sakte hain:
+import BASE_URL from '../../../envirment';
 
 export const getAllNotices = (id, address) => async (dispatch) => {
     dispatch(getRequest());
@@ -21,7 +22,7 @@ export const getAllNotices = (id, address) => async (dispatch) => {
             dispatch(getSuccess(result.data));
         }
     } catch (error) {
-        // Better error message extraction
+        // Axios error mein server se aaya hua message ya default message
         dispatch(getError(error.response?.data?.message || error.message || "Network Error"));
     }
 };

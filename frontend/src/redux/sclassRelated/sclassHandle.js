@@ -12,7 +12,8 @@ import {
     getSubDetailsRequest
 } from './sclassSlice';
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+// import BASE_URL from centralized environment file
+import BASE_URL from '../../../envirment.js'; // path apne project structure ke hisab se adjust karo
 
 const handleError = (dispatch, error) => {
     const message =
